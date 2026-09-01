@@ -3888,6 +3888,17 @@
 			(uuid "d3c0be8a-3a1c-4e45-bccc-dda58706514b")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3dmodels/E22.3dshapes/WIRELM-SMD_L38.5-W24.0-H3.9-E22-900M30S.step"
+			(offset
+				(xyz 0 -1.41 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -7718,7 +7729,18 @@
 			(thermal_bridge_angle 90)
 			(uuid "44ccd3cf-7815-4ff1-9f55-cd9d61c70990")
 		)
-		(embedded_fonts no)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Molex_73251-2200_Horizontal.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "easyeda2kicad:USON-10_L2.5-W1.0-P0.50-BL"
 		(layer "F.Cu")
@@ -8729,6 +8751,30 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "9c7e8c86-d7bf-481f-b607-f29007a21ca4")
+	)
+	(gr_text "To use the IPEX \nantenna connector, \nremove R4"
+		(at 78.8 65.66 0)
+		(layer "F.SilkS")
+		(uuid "bebf2d67-afe6-4ab1-a294-c82e106da2f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5V 1A Regulated\nPositive Center"
+		(at 96.58 35.89 0)
+		(layer "F.SilkS")
+		(uuid "2396fcc5-e54b-4b27-af3f-be00d4e6fa5d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 83.76 25.02)
