@@ -108,7 +108,3 @@ No se incluyen los PDF en el repositorio (son material con derechos de sus fabri
 
 - **Sin protección en la entrada del jack.** No hay TVS ni protección de polaridad inversa en `IN1`. El E22P se daña por encima de 5,5 V y el TPS2115A tiene un máximo absoluto de 6 V: un alimentador de 9 o 12 V, o de centro negativo, destruye ambos. **Usa sólo 5 V y comprueba la polaridad.**
 - **La potencia de transmisión no se detecta sola.** meshtasticd no sabe si el jack está puesto, así que `SX126X_MAX_POWER` es un ajuste fijo. Si vas a usar la placa sólo por USB, bájalo.
-
-## Licencia
-
-Sin licencia asignada todavía. Sin una licencia explícita, el contenido queda bajo copyright por defecto y no se concede permiso de uso, copia ni modificación. Si quieres reutilizarlo, abre un issue.
