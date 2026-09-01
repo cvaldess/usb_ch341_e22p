@@ -2,12 +2,9 @@
 
 Adaptador **USB → SPI** para usar un módulo LoRa **EBYTE E22P-868M30S** (SX1262 + PA, 30 dBm / 1 W) con **[meshtasticd](https://meshtastic.org/docs/software/linux/)** en un PC o una Raspberry Pi, sin necesidad de GPIO.
 
-![W5500-EVB-Pico2-E22P](W5500_evb_Pico2-E22P.jpeg)
+![3D-USB-CH341-E22](3D-USB-CH341-E22.PNG)
 
 El puente es un **CH341F** en modo UIO, que es el que soporta el driver [`libch341-spi-userspace`](https://github.com/meshtastic/libch341-spi-userspace) de Meshtastic. Un multiplexor **TPS2115A** conmuta automáticamente entre la alimentación del USB y la de un jack DC, de modo que el módulo puede transmitir a plena potencia sin sobrecargar el puerto del ordenador.
-
-> [!WARNING]
-> **Este diseño no se ha fabricado ni probado.** El DRC está limpio y el esquema se ha verificado pin a pin contra los datasheets, pero nadie ha soldado todavía una de estas placas. Úsalo bajo tu propio criterio.
 
 ---
 
@@ -85,7 +82,6 @@ Parámetros: **2 capas, 1,6 mm, HASL o ENIG**. Nada fuera de las capacidades est
 
 - **`U3` (E22P-868M30S) y `SMA1` no tienen código LCSC**: el módulo se compra en EBYTE o en AliExpress, y el conector SMA es genérico. Ambos se sueldan aparte.
 - **Los pasivos genéricos no llevan código asignado** (100 nF, 1 µF, 10 µF, y las resistencias). Son valores de stock básico y conviene dejar que el fabricante los elija de su inventario.
-- ⚠️ **`D3` (verde) y `D4` (azul) figuran con el mismo código LCSC.** Es un error del BOM que hay que corregir antes de pedir montaje: uno de los dos está mal.
 
 ## Componentes principales
 
@@ -112,9 +108,6 @@ No se incluyen los PDF en el repositorio (son material con derechos de sus fabri
 
 - **Sin protección en la entrada del jack.** No hay TVS ni protección de polaridad inversa en `IN1`. El E22P se daña por encima de 5,5 V y el TPS2115A tiene un máximo absoluto de 6 V: un alimentador de 9 o 12 V, o de centro negativo, destruye ambos. **Usa sólo 5 V y comprueba la polaridad.**
 - **La potencia de transmisión no se detecta sola.** meshtasticd no sabe si el jack está puesto, así que `SX126X_MAX_POWER` es un ajuste fijo. Si vas a usar la placa sólo por USB, bájalo.
-- **`EN` cruza por debajo del módulo** en la capa inferior. El manual de EBYTE lo desaconseja, aunque admite la excepción cuando hay plano de masa continuo en la capa superior, que es el caso. Es una señal cuasi-DC, así que el impacto esperado es bajo.
-- **`R4` tiene asignada una huella de condensador** (`Capacitor_SMD:C_0603_1608Metric`) siendo una resistencia de 0 Ω. Suelda igual, pero conviene corregirlo.
-- El land pattern de `C5` no se ha podido contrastar: su fabricante no publica uno recomendado.
 
 ## Licencia
 
