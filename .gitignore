@@ -1,0 +1,15 @@
+# Historial local de VSCode (56 MB de copias automáticas)
+.history/
+
+# Datasheets de terceros: material con derechos de sus fabricantes.
+# Los enlaces a las fuentes originales están en el README.
+docu/
+
+# Bloqueos de sesión de KiCad (contienen usuario y host)
+*.lck
+~*
+
+# Preferencias locales y cachés de KiCad
+*.kicad_prl
+fp-info-cache
+*-backups/
