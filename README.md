@@ -2,7 +2,7 @@
 
 Adaptador **USB → SPI** para usar un módulo LoRa **EBYTE E22P-868M30S** (SX1262 + PA, 30 dBm / 1 W) con **[meshtasticd](https://meshtastic.org/docs/software/linux/)** en un PC o una Raspberry Pi, sin necesidad de GPIO.
 
-![3D-USB-CH341-E22](3D-USB-CH341-E22.PNG)
+![Cover](usb_ch341_e22p-Cover.png)
 
 El puente es un **CH341F** en modo UIO, que es el que soporta el driver [`libch341-spi-userspace`](https://github.com/meshtastic/libch341-spi-userspace) de Meshtastic. Un multiplexor **TPS2115A** conmuta automáticamente entre la alimentación del USB y la de un jack DC, de modo que el módulo puede transmitir a plena potencia sin sobrecargar el puerto del ordenador.
 
@@ -20,6 +20,9 @@ El puente es un **CH341F** en modo UIO, que es el que soporta el driver [`libch3
 | Lógica | 3,3 V (LDO XC6206), nivel del E22P |
 | Antena | SMA hembra acodada, 50 Ω |
 | Configuración | EEPROM 24C02 para VID/PID/modo |
+
+![3D-USB-CH341-E22](usb_ch341_e22p-3D.JPG)
+![2D-USB-CH341-E22](usb_ch341_e22p-2D.JPG)
 
 ## Cómo funciona la alimentación
 
