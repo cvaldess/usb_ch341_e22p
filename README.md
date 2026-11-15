@@ -86,7 +86,7 @@ Parámetros: **2 capas, 1,6 mm, HASL o ENIG**. Nada fuera de las capacidades est
 
 - **Todas las piezas llevan código LCSC**, pasivos incluidos. El de `U3` (E22P-868M30S, `C51912689`) sólo está en el BOM, no en el esquemático.
 - **`SMA1` es de agujero pasante**: está en el BOM pero no en el centroid, y se suelda después del reflow. Las 4 patas de la carcasa de `USB1` también son pasantes.
-- **El centroid de `U3` es el centro de sus pads**, no el del cuerpo del módulo, que está 1,41 mm más hacia el SMA. La nota de `U3` en el BOM da las dos posiciones.
+- **El centroid da el centro del cuerpo de cada pieza.** En `U3`, `USB1` y `U6` no coincide con el origen de su huella (está a 1,41, 1,15 y 0,65 mm); el BOM lo indica en su nota.
 
 ## Componentes principales
 

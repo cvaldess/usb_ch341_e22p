@@ -17,10 +17,10 @@ Item #,Designator,Qty,Manufacturer,Mfg Part #,Description / Value,Package/Footpr
 16,SMA1,1,HJ Tech,HJ-SMA175,"SMA jack, right-angle, 50 Ohm",Through-hole,THT,C1509213,Through-hole: solder after reflow.
 17,U1,1,WCH (Jiangsu Qinheng),CH341F,USB to parallel / synchronous serial (SPI) bridge,"QFN-28 4 x 4 mm, 0.4 mm pitch, exposed pad",SMD,C412870,Exposed pad (pin 29) to GND.
 18,U2,1,XBLW,24C02S(XBLW),"EEPROM 2 Kbit, I2C",SOT-23-5,SMD,C18723540,
-19,U3,1,Ebyte,E22P-868M30S,"LoRa module, Semtech SX1262 + PA, 868 MHz, 30 dBm, SPI","SMD module, 38.5 x 24 mm",SMD,C51912689,"Centroid = centre of the pad pattern. The module body centre is 1.41 mm away along its long axis, toward the SMA end (X 107.935, Y -56.2205)."
+19,U3,1,Ebyte,E22P-868M30S,"LoRa module, Semtech SX1262 + PA, 868 MHz, 30 dBm, SPI","SMD module, 38.5 x 24 mm",SMD,C51912689,"Centroid = centre of the module body; the pad pattern centre is 1.41 mm away along the long axis, away from the SMA end."
 20,U4,1,HXY MOSFET,XC6206P332MR,LDO regulator 3.3V 300mA,SOT-23-3,SMD,C5148692,
 21,U5,1,Texas Instruments,TPS2115ADRBT,"Power multiplexer (autoswitching), 2.8-5.5V","SON-8 3 x 3 mm (DRB), 0.65 mm pitch, exposed pad",SMD,C2863458,Exposed pad (pin 9) to GND.
-22,U6,1,XKB Connection,DC-005-2.5A-2.5-SMT,"DC power jack 2.5 mm, right-angle","SMD, 4 pads + 2 non-plated locating pegs",SMD,C2880544,
+22,U6,1,XKB Connection,DC-005-2.5A-2.5-SMT,"DC power jack 2.5 mm, right-angle","SMD, 4 pads + 2 non-plated locating pegs",SMD,C2880544,Centroid = centre of the component body (0.65 mm from the footprint origin).
 23,U7,1,Hongjiacheng (R+O),H7VHD3UA,TVS / ESD protection diode,SOD-323,SMD,C20615807,
-24,USB1,1,Kinghelm,KH-TYPE-C-16P,"USB Type-C receptacle, 16 pins, right-angle","SMD, 16 pads + 4 plated through-hole shell tabs",SMD,C709357,Shell tabs are through-hole: solder them after reflow.
+24,USB1,1,Kinghelm,KH-TYPE-C-16P,"USB Type-C receptacle, 16 pins, right-angle","SMD, 16 pads + 4 plated through-hole shell tabs",SMD,C709357,Shell tabs are through-hole: solder them after reflow. Centroid = centre of the component body (1.15 mm from the footprint origin).
 25,X1,1,YXC,X322512MSB4SI,"Crystal 12 MHz, 20pF load, +/-10ppm","SMD 3225, 4 pads",SMD,C9002,
