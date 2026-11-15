@@ -1207,6 +1207,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Protection:TPD4E05U06DQA"
 			(pin_names
 				(offset 0)
@@ -2078,7 +2201,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -8.89 2.54 0)
 					(length 2.54)
 					(name "SCL"
@@ -2096,7 +2219,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 8.89 -2.54 180)
 					(length 2.54)
 					(name "GND"
@@ -2114,7 +2237,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -8.89 0 0)
 					(length 2.54)
 					(name "SDA"
@@ -2132,7 +2255,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 8.89 2.54 180)
 					(length 2.54)
 					(name "VCC"
@@ -2150,7 +2273,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -8.89 -2.54 0)
 					(length 2.54)
 					(name "WP"
@@ -2297,7 +2420,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -11.43 15.24 0)
 					(length 2.54)
 					(name "~{ACT}"
@@ -2315,7 +2438,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -11.43 12.7 0)
 					(length 2.54)
 					(name "RSTI"
@@ -2441,7 +2564,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -11.43 -5.08 0)
 					(length 2.54)
 					(name "V3"
@@ -2459,7 +2582,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -11.43 -7.62 0)
 					(length 2.54)
 					(name "UD+"
@@ -2477,7 +2600,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -11.43 -10.16 0)
 					(length 2.54)
 					(name "UD-"
@@ -2495,7 +2618,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -11.43 -12.7 0)
 					(length 2.54)
 					(name "GND"
@@ -2513,7 +2636,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -11.43 -15.24 0)
 					(length 2.54)
 					(name "XI"
@@ -2531,7 +2654,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -11.43 -17.78 0)
 					(length 2.54)
 					(name "XO"
@@ -2549,7 +2672,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -17.78 180)
 					(length 2.54)
 					(name "~{CTS}"
@@ -2567,7 +2690,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -15.24 180)
 					(length 2.54)
 					(name "~{DSR}"
@@ -2585,7 +2708,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -12.7 180)
 					(length 2.54)
 					(name "~{RI}"
@@ -2603,7 +2726,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -10.16 180)
 					(length 2.54)
 					(name "~{DCD}"
@@ -2621,7 +2744,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -7.62 180)
 					(length 2.54)
 					(name "~{OUT}"
@@ -2639,7 +2762,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -5.08 180)
 					(length 2.54)
 					(name "~{DTR}"
@@ -2657,7 +2780,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 -2.54 180)
 					(length 2.54)
 					(name "~{RTS}"
@@ -2675,7 +2798,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 0 180)
 					(length 2.54)
 					(name "~{SLP}"
@@ -2693,7 +2816,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 2.54 180)
 					(length 2.54)
 					(name "SDA"
@@ -2711,7 +2834,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 5.08 180)
 					(length 2.54)
 					(name "SCL"
@@ -2729,7 +2852,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 7.62 180)
 					(length 2.54)
 					(name "~{RDY}"
@@ -2747,7 +2870,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 10.16 180)
 					(length 2.54)
 					(name "TNOW"
@@ -2765,7 +2888,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 11.43 12.7 180)
 					(length 2.54)
 					(name "~{TEN}"
@@ -2783,7 +2906,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 11.43 15.24 180)
 					(length 2.54)
 					(name "VCC"
@@ -2801,7 +2924,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 11.43 17.78 180)
 					(length 2.54)
 					(name "EP"
@@ -3021,7 +3144,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 1.27 180)
 					(length 5.08)
 					(name "1"
@@ -3039,7 +3162,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 -3.81 180)
 					(length 5.08)
 					(name "2"
@@ -3057,7 +3180,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 -1.27 180)
 					(length 5.08)
 					(name "3"
@@ -3230,7 +3353,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "K"
@@ -3248,7 +3371,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "A"
@@ -4088,7 +4211,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -10.16 5.08 0)
 					(length 2.54)
 					(name "STAT"
@@ -4106,7 +4229,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -10.16 2.54 0)
 					(length 2.54)
 					(name "D0"
@@ -4124,7 +4247,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -10.16 0 0)
 					(length 2.54)
 					(name "D1"
@@ -4142,7 +4265,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -10.16 -2.54 0)
 					(length 2.54)
 					(name "ILIM"
@@ -4160,7 +4283,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -10.16 -5.08 0)
 					(length 2.54)
 					(name "GND"
@@ -4178,7 +4301,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 10.16 -3.81 180)
 					(length 2.54)
 					(name "IN2"
@@ -4196,7 +4319,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 10.16 -1.27 180)
 					(length 2.54)
 					(name "OUT"
@@ -4214,7 +4337,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 10.16 1.27 180)
 					(length 2.54)
 					(name "IN1"
@@ -4232,7 +4355,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 10.16 3.81 180)
 					(length 2.54)
 					(name "GND"
@@ -4476,7 +4599,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -7.62 -2.54 0)
 					(length 2.54)
 					(name "OSC1"
@@ -4494,7 +4617,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "GND"
@@ -4512,7 +4635,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "OSC2"
@@ -4530,7 +4653,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "GND"
@@ -4666,7 +4789,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 -6.35 90)
 					(length 2.54)
 					(name "VSS"
@@ -4684,7 +4807,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 10.16 3.81 180)
 					(length 2.54)
 					(name "VOUT"
@@ -4702,7 +4825,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -10.16 3.81 0)
 					(length 2.54)
 					(name "VIN"
@@ -4838,6 +4961,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 62.23 123.19)
@@ -4942,10 +5180,22 @@
 		(uuid "55f30c32-c0fc-4688-9eef-2abe448cef5d")
 	)
 	(junction
+		(at 190.5 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "579da804-5ff8-4a71-96a2-4baafa4f17cd")
+	)
+	(junction
 		(at 62.23 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b17ff12-5c27-4f61-908e-bb2496acf447")
+	)
+	(junction
+		(at 43.18 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b6f365c-9aa9-4286-9293-4c8f1e06c689")
 	)
 	(junction
 		(at 246.38 54.61)
@@ -5210,6 +5460,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f53697a5-5a78-41bf-a907-e1fccf4e52a0")
+	)
+	(junction
+		(at 156.21 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb59d645-55cf-4d90-bde3-5d6f07b8976c")
 	)
 	(junction
 		(at 229.87 69.85)
@@ -6079,6 +6335,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 147.32) (xy 184.15 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e38b09a-09aa-43da-8d41-067a030a30a6")
+	)
+	(wire
+		(pts
 			(xy 199.39 123.19) (xy 194.31 123.19)
 		)
 		(stroke
@@ -6129,7 +6395,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 118.11) (xy 41.91 118.11)
+			(xy 58.42 118.11) (xy 43.18 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6479,6 +6745,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 172.72) (xy 152.4 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "826b98b7-45b6-4767-9dd1-ee85a00c2597")
+	)
+	(wire
+		(pts
 			(xy 255.27 77.47) (xy 246.38 77.47)
 		)
 		(stroke
@@ -6639,6 +6915,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 182.88) (xy 156.21 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9878e32c-eaf5-4899-8541-b5f4b501a785")
+	)
+	(wire
+		(pts
 			(xy 246.38 54.61) (xy 246.38 62.23)
 		)
 		(stroke
@@ -6656,6 +6942,16 @@
 			(type default)
 		)
 		(uuid "9a606d29-e859-4225-82f5-a683aae972dc")
+	)
+	(wire
+		(pts
+			(xy 43.18 118.11) (xy 41.91 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e439745-3b71-44b2-b694-0868225be323")
 	)
 	(wire
 		(pts
@@ -7219,6 +7515,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 172.72) (xy 152.4 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2050389-dc3c-454a-9790-8f9fda87d93e")
+	)
+	(wire
+		(pts
 			(xy 33.02 134.62) (xy 62.23 134.62)
 		)
 		(stroke
@@ -7459,7 +7765,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 147.32) (xy 184.15 147.32)
+			(xy 198.12 147.32) (xy 190.5 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8791,7 +9097,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C3039698"
 			(at 246.38 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -9038,6 +9344,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C2906982"
+			(at 101.6 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5ba8ae82-09d7-492f-8fc4-bd9203c5340a")
 		)
@@ -9119,7 +9436,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C66501"
 			(at 127 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -9211,7 +9528,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C66501"
 			(at 58.42 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -9292,6 +9609,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 78.74 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2907002"
+			(at 78.74 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9504,6 +9832,84 @@
 			(project "usb_ch341_e22p"
 				(path "/cf8be695-e069-4610-b690-43bd2134e534"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 43.18 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "355b9fe3-8060-492d-a5ce-65e4881a2031")
+		(property "Reference" "#FLG05"
+			(at 43.18 116.205 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 43.18 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 43.18 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10855b66-bd16-481f-a97d-981b5f5beb9c")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -9917,6 +10323,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C2906982"
+			(at 62.23 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "72a10852-8e2d-4021-9cbb-f2599d1ec663")
 		)
@@ -10010,6 +10427,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 190.5 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b2d89d9-2294-4754-b159-db1a767dfe21")
+		(property "Reference" "#FLG03"
+			(at 190.5 145.415 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 190.5 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 190.5 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "adf84259-db98-42f2-b48b-33f431e0444d")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 38.1 77.47 0)
 		(unit 1)
@@ -10075,7 +10570,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C66501"
 			(at 38.1 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10360,6 +10855,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C2906974"
+			(at 229.87 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9eb8c325-79e7-46c4-8b94-d00d3007b828")
 		)
@@ -10610,6 +11116,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C2907003"
+			(at 198.12 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9d33bced-5c7f-4e57-ab48-6db4f63e9a32")
 		)
@@ -10807,6 +11324,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C29936"
+			(at 41.91 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b76c4571-2b09-4e2b-a93e-a865d2828b68")
 		)
@@ -10943,6 +11471,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C1509213 "
+			(at 229.87 31.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "19691877-ae5e-41e1-b048-e9f5b1ebe77b")
 		)
@@ -10962,6 +11501,84 @@
 			(project "usb_ch341_e22p"
 				(path "/cf8be695-e069-4610-b690-43bd2134e534"
 					(reference "SMA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 227.33 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fe7e4d0-e329-4178-bc44-c24934b3b039")
+		(property "Reference" "#FLG01"
+			(at 227.33 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 227.33 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 227.33 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "498c9725-b815-4417-8812-550c754e0905")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -11023,6 +11640,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 66.04 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C29936"
 			(at 66.04 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -11164,6 +11792,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 162.56 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a27cfd50-c934-4950-92ca-e0f1020bdfb5")
+		(property "Reference" "#FLG02"
+			(at 162.56 116.205 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 162.56 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 162.56 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36e2590f-5204-4e6f-849c-1ba1d9701179")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 234.95 66.04 0)
 		(unit 1)
@@ -11229,7 +11935,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C66501"
 			(at 234.95 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -11390,6 +12096,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 156.21 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb94c074-4073-4c7f-b86f-cc0f3df36d7f")
+		(property "Reference" "#PWR07"
+			(at 156.21 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5aeac63-b1e6-4be3-882b-1e05c2a5da1b")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 52.07 46.99 270)
 		(unit 1)
@@ -11444,6 +12228,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 52.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C66501"
+			(at 52.07 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11523,6 +12318,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 44.45 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2907002"
+			(at 44.45 36.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11664,6 +12470,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 156.21 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf2eb355-810e-418c-9d89-43db15f6902a")
+		(property "Reference" "H2"
+			(at 158.75 177.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 158.75 180.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_Via"
+			(at 156.21 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 156.21 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "69dfd301-36a0-4e7c-82a9-6a564a430530")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 99.06 128.27 0)
 		(unit 1)
@@ -11729,7 +12614,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C2907159"
 			(at 99.06 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -11811,6 +12696,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 156.21 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C23186"
 			(at 156.21 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -11994,7 +12890,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C66501"
 			(at 73.66 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12522,6 +13418,17 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C23186"
+			(at 200.66 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ea494f32-243b-45b0-af62-bf83b39e4640")
 		)
@@ -12667,6 +13574,85 @@
 			(project "usb_ch341_e22p"
 				(path "/cf8be695-e069-4610-b690-43bd2134e534"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 156.21 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff45e801-883f-4167-ae93-e31ccf57cea1")
+		(property "Reference" "H1"
+			(at 158.75 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 158.75 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_Via"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "592d32cd-360e-4714-a694-0d3dd8b3102f")
+		)
+		(instances
+			(project "usb_ch341_e22p"
+				(path "/cf8be695-e069-4610-b690-43bd2134e534"
+					(reference "H1")
 					(unit 1)
 				)
 			)

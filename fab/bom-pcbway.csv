@@ -1,0 +1,26 @@
+Item #,Designator,Qty,Manufacturer,Mfg Part #,Description / Value,Package/Footprint,Type,LCSC Part #,Your Instructions / Notes
+1,C1,1,Fenghua (FH),1206B472K102NT,Capacitor 4.7nF 1kV X7R +/-10%,1206 (3216 metric),SMD,C9192,
+2,"C2,C3",2,FOJAN,FCC0402N200J500AT,Capacitor 20pF 50V C0G +/-5%,0402 (1005 metric),SMD,C5137579,
+3,"C4,C6,C7,C10,C11,C12",6,Samsung Electro-Mechanics,CL10B104KO8NNNC,Capacitor 100nF 16V X7R +/-10%,0603 (1608 metric),SMD,C66501,
+4,C5,1,Honor Elec,HV1C477M0607PZ,"Capacitor 470uF 16V +/-20%, SMD can","SMD, D6.3 x L7.7 mm",SMD,C42436549,Polarized: pad 1 is the positive terminal.
+5,"C8,C9",2,Samsung Electro-Mechanics,CL10B105KA8NNNC,Capacitor 1uF 25V X7R +/-10%,0603 (1608 metric),SMD,C29936,
+6,C13,1,Samsung Electro-Mechanics,CL10B106MQ8NRNC,Capacitor 10uF 6.3V X7R +/-20%,0603 (1608 metric),SMD,C3039698,
+7,D2,1,Texas Instruments,TPD4E05U06DQAR,"ESD protection array, 4 channels, 5.5V","USON-10 (2.5 x 1.0 mm), 0.5 mm pitch",SMD,C138714,
+8,D3,1,XINGLIGHT,XL-1608UGC-06A,LED green 525 nm,0603 (1608 metric),SMD,C7371903,
+9,D4,1,XINGLIGHT,XL-1608UGC-06A,LED green 525 nm,0603 (1608 metric),SMD,C7371903,
+10,"R1,R2",2,UNI-ROYAL,0603WAF5101T5E,Resistor 5.1k 1% 100mW,0603 (1608 metric),SMD,C23186,
+11,R3,1,FOJAN,FRC0603F1004TS,Resistor 1M 1% 100mW,0603 (1608 metric),SMD,C2907003,
+12,R4,1,FOJAN,FRC0603F0000TS,Resistor 0 Ohm 100mW,0603 (1608 metric),SMD,C2906974,
+13,"R5,R7",2,FOJAN,FRC0603F1002TS,Resistor 10k 1% 100mW,0603 (1608 metric),SMD,C2906982,
+14,"R6,R9",2,FOJAN,FRC0603F1001TS,Resistor 1k 1% 100mW,0603 (1608 metric),SMD,C2907002,
+15,R8,1,FOJAN,FRC0603J391 TS,Resistor 390 Ohm 5% 100mW,0603 (1608 metric),SMD,C2907159,
+16,SMA1,1,HJ Tech,HJ-SMA175,"SMA jack, right-angle, 50 Ohm",Through-hole,THT,C1509213,Through-hole: solder after reflow.
+17,U1,1,WCH (Jiangsu Qinheng),CH341F,USB to parallel / synchronous serial (SPI) bridge,"QFN-28 4 x 4 mm, 0.4 mm pitch, exposed pad",SMD,C412870,Exposed pad (pin 29) to GND.
+18,U2,1,XBLW,24C02S(XBLW),"EEPROM 2 Kbit, I2C",SOT-23-5,SMD,C18723540,
+19,U3,1,Ebyte,E22P-868M30S,"LoRa module, Semtech SX1262 + PA, 868 MHz, 30 dBm, SPI","SMD module, 38.5 x 24 mm",SMD,C51912689,"Centroid = centre of the pad pattern. The module body centre is 1.41 mm away along its long axis, toward the SMA end (X 107.935, Y -56.2205)."
+20,U4,1,HXY MOSFET,XC6206P332MR,LDO regulator 3.3V 300mA,SOT-23-3,SMD,C5148692,
+21,U5,1,Texas Instruments,TPS2115ADRBT,"Power multiplexer (autoswitching), 2.8-5.5V","SON-8 3 x 3 mm (DRB), 0.65 mm pitch, exposed pad",SMD,C2863458,Exposed pad (pin 9) to GND.
+22,U6,1,XKB Connection,DC-005-2.5A-2.5-SMT,"DC power jack 2.5 mm, right-angle","SMD, 4 pads + 2 non-plated locating pegs",SMD,C2880544,
+23,U7,1,Hongjiacheng (R+O),H7VHD3UA,TVS / ESD protection diode,SOD-323,SMD,C20615807,
+24,USB1,1,Kinghelm,KH-TYPE-C-16P,"USB Type-C receptacle, 16 pins, right-angle","SMD, 16 pads + 4 plated through-hole shell tabs",SMD,C709357,Shell tabs are through-hole: solder them after reflow.
+25,X1,1,YXC,X322512MSB4SI,"Crystal 12 MHz, 20pF load, +/-10ppm","SMD 3225, 4 pads",SMD,C9002,

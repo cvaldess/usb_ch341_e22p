@@ -74,17 +74,19 @@ Todo lo necesario está en [`fab/`](fab/):
 
 | Archivo | Para qué |
 |---|---|
-| `gerbers-jlcpcb.zip` | Gerbers + taladros, listo para subir |
-| `bom-jlcpcb.csv` | Lista de materiales |
-| `cpl-jlcpcb.csv` | Posiciones para montaje |
+| `gerbers-pcbway.zip` | Gerbers + taladros + mapas de taladros, listo para subir a PCBWay |
+| `bom-pcbway.csv` | Lista de materiales: fabricante, referencia, código LCSC y notas de montaje |
+| `centroid-pcbway.csv` | Posiciones para el montaje (las 34 piezas SMD) |
+| `*-drl_map.pdf` | Mapa de taladros, para revisarlo a simple vista |
 | `*.gtp` / `*.gbp` | Capas de pasta, por si pides esténcil |
 
-Parámetros: **2 capas, 1,6 mm, HASL o ENIG**. Nada fuera de las capacidades estándar.
+Parámetros: **2 capas, 1,6 mm, HASL o ENIG**. Nada fuera de las capacidades estándar. El esténcil es de **una sola cara** (arriba): la capa de pasta inferior está vacía.
 
 ### Notas sobre el BOM
 
-- **`U3` (E22P-868M30S) y `SMA1` no tienen código LCSC**: el módulo se compra en EBYTE o en AliExpress, y el conector SMA es genérico. Ambos se sueldan aparte.
-- **Los pasivos genéricos no llevan código asignado** (100 nF, 1 µF, 10 µF, y las resistencias). Son valores de stock básico y conviene dejar que el fabricante los elija de su inventario.
+- **Todas las piezas llevan código LCSC**, pasivos incluidos. El de `U3` (E22P-868M30S, `C51912689`) sólo está en el BOM, no en el esquemático.
+- **`SMA1` es de agujero pasante**: está en el BOM pero no en el centroid, y se suelda después del reflow. Las 4 patas de la carcasa de `USB1` también son pasantes.
+- **El centroid de `U3` es el centro de sus pads**, no el del cuerpo del módulo, que está 1,41 mm más hacia el SMA. La nota de `U3` en el BOM da las dos posiciones.
 
 ## Componentes principales
 
