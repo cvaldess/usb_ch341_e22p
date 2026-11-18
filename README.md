@@ -4,6 +4,8 @@
 
 ![Cover](usb_ch341_e22p-Cover.png)
 
+<a href="https://www.pcbway.com/project/shareproject/usb_ch341_e22p_33f0f076.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+
 The bridge is a **CH341F** in UIO mode, the mode supported by Meshtastic's [`libch341-spi-userspace`](https://github.com/meshtastic/libch341-spi-userspace) driver. A **TPS2115A** power multiplexer switches automatically between USB power and a DC jack, so the module can transmit at full power without overloading the computer's port.
 
 ---
